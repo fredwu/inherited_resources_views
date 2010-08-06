@@ -1,4 +1,4 @@
-<p><%= link_to "New", eval("new_#{controller_name.singularize}_path") %></p>
+<p><%= link_to "New", new_polymorphic_path(controller_name.singularize) %></p>
 
 <% if collection.any? %>
 <table>
@@ -16,7 +16,7 @@
       <td><%= a[1] %></td>
     <% end %>
       <td><%= link_to "Show", r %></td>
-      <td><%= link_to "Edit", eval("edit_#{controller_name.singularize}_path(r)") %></td>
+      <td><%= link_to "Edit", edit_polymorphic_path(r) %></td>
       <td><%= link_to "Destroy", r, :confirm => 'Are you sure?', :method => :delete %></td>
     </tr>
   <% end %>
