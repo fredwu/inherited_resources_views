@@ -26,7 +26,7 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |s|
     s.name = "inherited_resources_views"
-    s.version = "0.1.1"
+    s.version = "0.1.2"
     s.summary = "A lot of times resources share the same views, so why not DRY 'em up using Inherited Resources Views!"
     s.description = "Using Inherited Resources is an excellent way to reduce the amount of repetition in your controllers. But what about views? A lot of times resources share the same views, so why not DRY 'em up using Inherited Resources Views!"
     s.email = "ifredwu@gmail.com"
