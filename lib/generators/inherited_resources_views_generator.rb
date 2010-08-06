@@ -1,7 +1,7 @@
 class InheritedResourcesViewsGenerator < Rails::Generators::Base
   desc "Generates inherited_resource_views templates."
 
-  class_option :template_engine, :type => :string, :aliases => "-t", :default => "erb",
+  class_option :template_engine, :type => :string, :aliases => "-t",
                                  :desc => "Template engine for the views. Available options are 'erb' and 'haml'."
 
   def self.source_root
@@ -9,8 +9,8 @@ class InheritedResourcesViewsGenerator < Rails::Generators::Base
   end
 
   def copy_views
-    case options[:template_engine]
-    when "haml"
+    case options[:template_engine].to_sym
+    when :haml
       verify_haml_existence
       verify_haml_version
       create_and_copy_haml_views
