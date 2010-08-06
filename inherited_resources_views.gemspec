@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{inherited_resources_views}
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Fred Wu"]
-  s.date = %q{2010-08-05}
+  s.date = %q{2010-08-06}
   s.description = %q{Using Inherited Resources is an excellent way to reduce the amount of repetition in your controllers. But what about views? A lot of times resources share the same views, so why not DRY 'em up using Inherited Resources Views!}
   s.email = %q{ifredwu@gmail.com}
   s.extra_rdoc_files = [
