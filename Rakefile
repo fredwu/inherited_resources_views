@@ -32,7 +32,7 @@ begin
     s.email = "ifredwu@gmail.com"
     s.homepage = "http://github.com/fredwu/inherited_resources_views"
     s.authors = ["Fred Wu"]
-    s.add_dependency("inherited_resources", ">= 1.1")
+    s.add_dependency("inherited_resources", ">= 1.0")
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError

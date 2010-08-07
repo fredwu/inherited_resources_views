@@ -25,7 +25,6 @@ If you are confused about the difference to some other similarly named projects,
 
 ## Dependencies
 
-* **Rails 3.0+**
 * [Inherited Resources](http://github.com/josevalim/inherited_resources)
 
 ## Installation
