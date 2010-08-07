@@ -44,7 +44,7 @@ It is *extremely* simple to use Inherited Resources Views. The only step you nee
 
     rails generate inherited_resources_views
 
-This will generate a set of views in your `app/views/inherited_resources_views` folder. Edit away!
+This will generate a set of views in your `app/views/inherited_resources` folder. Edit away!
 
 ## Author
 
