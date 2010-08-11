@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{inherited_resources_views}
-  s.version = "0.2.0"
+  s.version = "0.3.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Fred Wu"]
-  s.date = %q{2010-08-07}
+  s.date = %q{2010-08-11}
   s.description = %q{Using Inherited Resources is an excellent way to reduce the amount of repetition in your controllers. But what about views? A lot of times resources share the same views, so why not DRY 'em up using Inherited Resources Views!}
   s.email = %q{ifredwu@gmail.com}
   s.extra_rdoc_files = [
@@ -20,14 +20,17 @@ Gem::Specification.new do |s|
      "MIT-LICENSE",
      "README.md",
      "Rakefile",
-     "app/views/inherited_resources/_form.html.erb",
-     "app/views/inherited_resources/edit.html.erb",
-     "app/views/inherited_resources/index.html.erb",
-     "app/views/inherited_resources/new.html.erb",
-     "app/views/inherited_resources/show.html.erb",
+     "VERSION",
      "inherited_resources_views.gemspec",
      "init.rb",
-     "lib/generators/inherited_resources_views_generator.rb",
+     "lib/generators/inherited_resources_views/generators/current_generator.rb",
+     "lib/generators/inherited_resources_views/generators/legacy_generator.rb",
+     "lib/generators/inherited_resources_views/inherited_resources_views_generator.rb",
+     "lib/generators/inherited_resources_views/templates/app/views/inherited_resources/_form.html.erb",
+     "lib/generators/inherited_resources_views/templates/app/views/inherited_resources/edit.html.erb",
+     "lib/generators/inherited_resources_views/templates/app/views/inherited_resources/index.html.erb",
+     "lib/generators/inherited_resources_views/templates/app/views/inherited_resources/new.html.erb",
+     "lib/generators/inherited_resources_views/templates/app/views/inherited_resources/show.html.erb",
      "lib/inherited_resources_views.rb",
      "lib/inherited_resources_views/action_view.rb",
      "test/inherited_resources_views_test.rb",
