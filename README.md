@@ -27,11 +27,19 @@ If you are confused about the difference to some other similarly named projects,
 
 * [Inherited Resources](http://github.com/josevalim/inherited_resources)
 
+## Limitations
+
+When using Rails 2, the generator only generates `Erb` templates, whereas using Rails 3 it generates `Erb` or `Haml` templates accordingly.
+
 ## Installation
 
 As a Rails plugin:
 
+    # rails 3
     rails plugin install git://github.com/fredwu/inherited_resources_views.git
+    
+    # rails 2
+    script/plugin install git://github.com/fredwu/inherited_resources_views.git
 
 As a gem:
 
@@ -41,7 +49,11 @@ As a gem:
 
 It is *extremely* simple to use Inherited Resources Views. The only step you need to do after the installation is to customise the default views:
 
+    # rails 3
     rails generate inherited_resources_views
+    
+    # rails 2
+    script/generate inherited_resources_views
 
 This will generate a set of views in your `app/views/inherited_resources` folder. Edit away!
 
