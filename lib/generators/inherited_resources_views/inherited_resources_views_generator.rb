@@ -5,7 +5,7 @@ class InheritedResourcesViewsGenerator < Rails::Generators::Base
                                  :desc => "Template engine for the views. Available options are 'erb' and 'haml'."
 
   def self.source_root
-    @_views_source_root ||= File.expand_path("../../../app/views", __FILE__)
+    @_views_source_root ||= File.expand_path("../../../../app/views", __FILE__)
   end
 
   def copy_views
