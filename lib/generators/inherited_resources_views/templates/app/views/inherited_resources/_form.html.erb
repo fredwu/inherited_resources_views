@@ -1,5 +1,5 @@
 <table>
-<%- form_for(resource) do |f| %>
+<%- form_for(resource, :url => resource.new_record? ? collection_url : resource_url(resource)) do |f| %>
   <% if resource.errors.any? %>
   <tr>
     <td colspan="2">
