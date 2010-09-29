@@ -1,4 +1,4 @@
-<p><%= link_to "New", new_polymorphic_path(controller_name.singularize) %></p>
+<p><%= link_to "New", new_resource_url %></p>
 
 <% if collection.any? %>
 <table>
@@ -15,9 +15,9 @@
     <% r.attributes.each do |a| %>
       <td><%= a[1] %></td>
     <% end %>
-      <td><%= link_to "Show", r %></td>
-      <td><%= link_to "Edit", edit_polymorphic_path(r) %></td>
-      <td><%= link_to "Destroy", r, :confirm => 'Are you sure?', :method => :delete %></td>
+      <td><%= link_to "Show", resource_url(r) %></td>
+      <td><%= link_to "Edit", edit_resource_url(r) %></td>
+      <td><%= link_to "Destroy", resource_url(r), :confirm => 'Are you sure?', :method => :delete %></td>
     </tr>
   <% end %>
   </tbody>
