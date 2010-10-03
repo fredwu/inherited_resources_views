@@ -1,5 +1,8 @@
 <table>
-<%- form_for(resource, :url => resource.new_record? ? collection_url : resource_url(resource)) do |f| %>
+<%- form_for("#{resource_class.to_s.downcase}",
+      resource,
+      :url => resource.new_record? ? collection_url : resource_url(resource),
+      :html => { :method => (resource.new_record? ? "post" : "put") }) do |f| %>
   <% if resource.errors.any? %>
   <tr>
     <td colspan="2">
