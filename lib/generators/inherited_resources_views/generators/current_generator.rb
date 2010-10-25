@@ -38,6 +38,20 @@ class InheritedResourcesViewsGenerator < Rails::Generators::Base
   end
 
   def create_and_copy_haml_views
+    begin
+      require 'hpricot'
+    rescue LoadError
+      say "Hpricot is not installed, or it is not specified in your Gemfile."
+      exit
+    end
+
+    begin
+      require 'ruby_parser'
+    rescue LoadError
+      say "Ruby_parser is not installed, or it is not specified in your Gemfile."
+      exit
+    end
+
     require 'tmpdir'
     html_root = "#{self.class.source_root}/inherited_resources"
 
