@@ -55,6 +55,8 @@ It is *extremely* simple to use Inherited Resources Views. The only step you nee
     # rails 2
     script/generate inherited_resources_views
 
+    # Please remember to restart your server!
+
 This will generate a set of views in your `app/views/inherited_resources` folder. Edit away!
 
 ## Author
