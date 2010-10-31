@@ -1,4 +1,4 @@
-<table>
+<table class="<%= collection.first.class.to_s.downcase.pluralize %> collection">
   <thead>
     <tr>
     <% collection.first.attributes.each_pair do |field, value| %>
