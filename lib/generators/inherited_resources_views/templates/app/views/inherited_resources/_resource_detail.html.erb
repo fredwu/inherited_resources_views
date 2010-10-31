@@ -1,5 +1,6 @@
 <table>
 <% resource.attributes.each do |a| %>
+  <% next if ['id', 'created_at', 'updated_at'].include?(a[0]) %>
   <tr>
     <th><%= a[0].titleize %></th>
     <td><%= a[1] %></td>

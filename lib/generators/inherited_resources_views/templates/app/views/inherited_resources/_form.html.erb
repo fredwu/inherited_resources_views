@@ -13,6 +13,7 @@
   </tr>
   <% end %>
   <% resource.attributes.each do |a| %>
+    <% next if ['id', 'created_at', 'updated_at'].include?(a[0]) %>
     <tr>
       <td><%= a[0].titleize %></td>
       <td><%= f.text_field a[0].to_sym %></td>
