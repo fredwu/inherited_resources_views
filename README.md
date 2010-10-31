@@ -1,5 +1,14 @@
 # Inherited Resources Views
 
+## Changes in this fork
+
+* Adding headings
+* Adding classes for ease of styling
+* Using .each_pair instead of .each for readability
+* Exclude id and timestamp columns (not very DRY)
+* Titleize attribute names
+* Extracting some parts of the views into partials to allow more fine-grained overriding
+
 ## Introduction
 
 Using [Inherited Resources](http://github.com/josevalim/inherited_resources) is an excellent way to reduce the amount of repetition in your controllers. But what about views? A lot of times resources share the same views, so why not DRY 'em up using Inherited Resources Views!
