@@ -12,11 +12,11 @@
     </td>
   </tr>
   <% end %>
-  <% resource.attributes.each do |a| %>
-    <% next if ['id', 'created_at', 'updated_at'].include?(a[0]) %>
+  <% resource.attributes.each_pair do |field, value| %>
+    <% next if ['id', 'created_at', 'updated_at'].include?(field) %>
     <tr>
-      <td><%= a[0].titleize %></td>
-      <td><%= f.text_field a[0].to_sym %></td>
+      <td><%= field.titleize %></td>
+      <td><%= f.text_field field.to_sym %></td>
     </tr>
   <% end %>
   <tr>
