@@ -1,9 +1,9 @@
 <table>
-<% resource.attributes.each do |a| %>
-  <% next if ['id', 'created_at', 'updated_at'].include?(a[0]) %>
+<% resource.attributes.each_pair do |attr, value| %>
+  <% next if ['id', 'created_at', 'updated_at'].include?(attr) %>
   <tr>
-    <th><%= a[0].titleize %></th>
-    <td><%= a[1] %></td>
+    <th><%= attr.titleize %></th>
+    <td><%= value %></td>
   </tr>
 <% end %>
 </table>

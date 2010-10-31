@@ -1,18 +1,18 @@
 <table>
   <thead>
     <tr>
-    <% collection.first.attributes.each do |a| %>
-      <% next if ['id', 'created_at', 'updated_at'].include?(a[0]) %>
-      <th><%= a[0].titleize %></th>
+    <% collection.first.attributes.each_pair do |field, value| %>
+      <% next if ['id', 'created_at', 'updated_at'].include?(field) %>
+      <th><%= field.titleize %></th>
     <% end %>
     </tr>
   </thead>
   <tbody>
   <% collection.each do |r| %>
     <tr>
-    <% r.attributes.each do |a| %>
-      <% next if ['id', 'created_at', 'updated_at'].include?(a[0]) %>
-      <td><%= a[1] %></td>
+    <% r.attributes.each_pair do |field, value| %>
+      <% next if ['id', 'created_at', 'updated_at'].include?(field) %>
+      <td><%= value %></td>
     <% end %>
       <td><%= link_to "Show", resource_url(r) %></td>
       <td><%= link_to "Edit", edit_resource_url(r) %></td>
