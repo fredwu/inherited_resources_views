@@ -2,7 +2,7 @@
   <thead>
     <tr>
     <% collection.first.attributes.each do |a| %>
-      <th><%= a[0] %></th>
+      <th><%= a[0].titleize %></th>
     <% end %>
     </tr>
   </thead>

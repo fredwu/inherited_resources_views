@@ -1,7 +1,7 @@
 <table>
 <% resource.attributes.each do |a| %>
   <tr>
-    <th><%= a[0] %></th>
+    <th><%= a[0].titleize %></th>
     <td><%= a[1] %></td>
   </tr>
 <% end %>
