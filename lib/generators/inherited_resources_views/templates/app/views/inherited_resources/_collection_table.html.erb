@@ -2,6 +2,7 @@
   <thead>
     <tr>
     <% collection.first.attributes.each do |a| %>
+      <% next if ['id', 'created_at', 'updated_at'].include?(a[0]) %>
       <th><%= a[0].titleize %></th>
     <% end %>
     </tr>
@@ -10,6 +11,7 @@
   <% collection.each do |r| %>
     <tr>
     <% r.attributes.each do |a| %>
+      <% next if ['id', 'created_at', 'updated_at'].include?(a[0]) %>
       <td><%= a[1] %></td>
     <% end %>
       <td><%= link_to "Show", resource_url(r) %></td>
