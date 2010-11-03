@@ -18,11 +18,6 @@ If you are confused about the difference to some other similarly named projects,
 
 [Inherited Views](http://github.com/gregbell/inherited_views) tries to solve the same problem we're solving, but from a slightly different angle. It is more complex, requires [Formtastic](http://github.com/justinfrench/formtastic) and [WillPaginate](http://github.com/mislav/will_paginate), and it only generates erb templates. **Inherited Resources Views** on the other hand, is extremely simple, is library-agnostic (it only depends on [Inherited Resources](http://github.com/josevalim/inherited_resources)), and it supports both erb and [haml](http://github.com/nex3/haml) templates.
 
-## Todo
-
-* Add tests
-* Make default views more elegant and perhaps customisable
-
 ## Dependencies
 
 * [Inherited Resources](http://github.com/josevalim/inherited_resources)
@@ -37,7 +32,7 @@ As a Rails plugin:
 
     # rails 3
     rails plugin install git://github.com/fredwu/inherited_resources_views.git
-    
+
     # rails 2
     script/plugin install git://github.com/fredwu/inherited_resources_views.git
 
@@ -51,7 +46,7 @@ It is *extremely* simple to use Inherited Resources Views. The only step you nee
 
     # rails 3
     rails generate inherited_resources_views
-    
+
     # rails 2
     script/generate inherited_resources_views
 
