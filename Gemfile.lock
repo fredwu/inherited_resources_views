@@ -1,0 +1,27 @@
+PATH
+  remote: .
+  specs:
+    inherited_resources_views (0.4.0)
+      inherited_resources (>= 1.0)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    has_scope (0.5.0)
+    hpricot (0.8.3)
+    inherited_resources (1.1.2)
+      has_scope (~> 0.5.0)
+      responders (~> 0.6.0)
+    responders (0.6.2)
+    ruby_parser (2.0.5)
+      sexp_processor (~> 3.0)
+    sexp_processor (3.0.5)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  hpricot
+  inherited_resources (>= 1.0)
+  inherited_resources_views!
+  ruby_parser

@@ -1,3 +1,9 @@
+begin
+  require 'bundler'
+  Bundler::GemHelper.install_tasks
+rescue Exception => e
+end
+
 require 'rake'
 require 'rake/testtask'
 require 'rake/rdoctask'
@@ -32,6 +38,8 @@ begin
     s.homepage = "http://github.com/fredwu/inherited_resources_views"
     s.authors = ["Fred Wu"]
     s.add_dependency("inherited_resources", ">= 1.0")
+    s.add_development_dependency("hpricot", ">= 0")
+    s.add_development_dependency("ruby_parser", ">= 0")
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError

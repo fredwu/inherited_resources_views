@@ -58,11 +58,17 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<inherited_resources>, [">= 1.0"])
+      s.add_development_dependency(%q<hpricot>, [">= 0"])
+      s.add_development_dependency(%q<ruby_parser>, [">= 0"])
     else
       s.add_dependency(%q<inherited_resources>, [">= 1.0"])
+      s.add_dependency(%q<hpricot>, [">= 0"])
+      s.add_dependency(%q<ruby_parser>, [">= 0"])
     end
   else
     s.add_dependency(%q<inherited_resources>, [">= 1.0"])
+    s.add_dependency(%q<hpricot>, [">= 0"])
+    s.add_dependency(%q<ruby_parser>, [">= 0"])
   end
 end
 
