@@ -5,6 +5,9 @@
       <% next if ['id', 'created_at', 'updated_at'].include?(field) %>
       <th><%= field.titleize %></th>
     <% end %>
+    <th>Show</th>
+    <th>Edit</th>
+    <th>Destroy</th>
     </tr>
   </thead>
   <tbody>
