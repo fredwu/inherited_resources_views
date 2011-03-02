@@ -1,3 +1,5 @@
+[![](http://stillmaintained.com/fredwu/inherited_resources_views.png)](http://stillmaintained.com/fredwu/inherited_resources_views)
+
 # Inherited Resources Views
 
 ## Introduction
