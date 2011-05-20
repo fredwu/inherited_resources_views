@@ -1,5 +1,7 @@
 [![](http://stillmaintained.com/fredwu/inherited_resources_views.png)](http://stillmaintained.com/fredwu/inherited_resources_views)
 
+Since Rails 3.1 has view inheritance built in, it effectively renders this gem useless. The amount of time and effort to get all the issues sorted and tests added are too significant to warrant any more releases. If anyone is interested in taking over the project, please let me know! :)
+
 # Inherited Resources Views
 
 ## Introduction
